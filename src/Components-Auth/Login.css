@@ -1,9 +1,7 @@
-
 body {
   margin: 0;
 }
 
-/* Page size: 1920 x 1080 */
 .login-page {
   position: relative;
   width: 1920px;
@@ -14,7 +12,6 @@ body {
   background: linear-gradient(90deg, #566b99 0%, #8a9aba 30%, #c3cadb 52%, #f2f3f8 68%, #fdfdfd 82%);
 }
 
-/* ================= LEFT ================= */
 .login-left {
   position: absolute;
   top: 0;
