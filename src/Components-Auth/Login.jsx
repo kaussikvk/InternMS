@@ -3,8 +3,8 @@ import './Login.css';
 
 import graduationCap from '../assets/Auth/Graduation Cap.png';
 import loginBg from '../assets/Auth/Login-BG Img.png';
-import shieldBlue from '../assets/Auth/Approved sheild blue.png';
-import shieldWhite from '../assets/Auth/Approved sheild white.png';
+import deansApprovedShield from '../assets/Auth/Approved sheild blue.png';
+import quoteTextshield from '../assets/Auth/Approved sheild white.png';
 import uptrendArrow from '../assets/Auth/Uptrend Arrow.png';
 import mailIcon from '../assets/Auth/mail.png';
 import lockIcon from '../assets/Auth/Lock.png';
@@ -25,59 +25,60 @@ function Login() {
 
   return (
     <div className="login-page">
+      {/* ---------- LEFT SIDE ---------- */}
       <div className="login-left">
-        <div className="brand">
-          <div className="brand-icon">
+        <div className="ims-title">
+          <div className="ims-title-logo">
             <img src={graduationCap} alt="logo" />
           </div>
-          <div className="brand-text">
+          <div className="ims-title-text">
             <h3>Internship Management System</h3>
-            <p>Learn • Grow • Build Your Future</p>     
+            <p>Learn • Grow • Build Your Future</p>
           </div>
         </div>
 
-        <h1 className="hero-title">
+        <h1 className="illustration-title">
           Connecting academic talent with
           <br />
           career-defining corporate internships
         </h1>
-        <p className="hero-desc">
+        <p className="illustration-desc">
           The verified enterprise portal synchronizing university dean approvals, experiential learning hours,
           <br />
           and Fortune 500 mentorship agreements
         </p>
 
-        <div className="stat-card stat-1"> 
+        <div className="active-intern-card active-intern-card-1">
           <h2>14,200+</h2>
-          <span className="stat-label">ACTIVE INTERNS</span>
-          <span className="stat-trend green">
+          <span className="active-intern-label">ACTIVE INTERNS</span>
+          <span className="active-intern-trend green">
             <img src={uptrendArrow} alt="" /> +24% YoY
           </span>
         </div>
 
-        <div className="stat-card stat-2">
+        <div className="active-intern-card active-intern-card-2">
           <h2>98.4%</h2>
-          <span className="stat-label">CREDIT VERIFIED</span>
-          <span className="stat-trend blue">
-            <img src={shieldBlue} alt="" /> Deans Approved
+          <span className="active-intern-label">CREDIT VERIFIED</span>
+          <span className="active-intern-trend blue">
+            <img src={deansApprovedShield} alt="" /> Deans Approved
           </span>
         </div>
 
-        <div className="stat-card stat-3"> /* active intern card */
+        <div className="active-intern-card active-intern-card-3">
           <h2>14,200+</h2>
-          <span className="stat-label">ACTIVE INTERNS</span>
-          <span className="stat-trend green">
+          <span className="active-intern-label">ACTIVE INTERNS</span>
+          <span className="active-intern-trend green">
             <img src={uptrendArrow} alt="" /> +24% YoY
           </span>
         </div>
 
-        <img className="hero-img" src={loginBg} alt="Internship portal" /> /* illustration img */
+        <img className="illustration-img" src={loginBg} alt="Internship portal" />
 
         <div className="quote-card">
-          <div className="quote-icon">
-            <img src={shieldWhite} alt="" /> /*change*/
+          <div className="quote-text-sheild-img">
+            <img src={quoteTextshield} alt="" />
           </div>
-          <div className="quote-text"> 
+          <div className="quote-text">
             <p>
               “Automated audit trails cut academic credit clearance time from 14
               days to under 48 hours.”
@@ -91,8 +92,8 @@ function Login() {
 
       {/* ---------- RIGHT SIDE ---------- */}
       <form className="login-right" onSubmit={handleSignIn}>
-        <h2 className="welcome">Welcome Back</h2>
-        <p className="welcome-sub">Manage your career journey</p>
+        <h2 className="welcome-text">Welcome Back</h2>
+        <p className="welcome-text-sub">Manage your career journey</p>
 
         <label className="field-label email-label">Email Address</label>
         <div className="input-box">
@@ -125,7 +126,7 @@ function Login() {
           />
         </div>
 
-        <label className="keep-signed">
+        <label className="keep-signed-checkbox">
           <input
             type="checkbox"
             checked={keepSignedIn}
@@ -138,7 +139,7 @@ function Login() {
           Sign In <img src={rightArrow} alt="" />
         </button>
 
-        <div className="divider">
+        <div className="divider-line">
           <span>OR CONTINUE WITH</span>
         </div>
 
