@@ -143,7 +143,7 @@ body {
 .stat-trend.green { color: #16a34a; }
 .stat-trend.blue { color: #1a5f8a; }
 
-/* ----- illustration ----- */
+
 .hero-img {
   position: absolute;
   top: 443px;
@@ -154,7 +154,6 @@ body {
   mix-blend-mode: darken;
 }
 
-/* ----- quote card ----- */
 .quote-card {
   position: absolute;
   top: 957px;

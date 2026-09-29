@@ -32,7 +32,7 @@ function Login() {
           </div>
           <div className="brand-text">
             <h3>Internship Management System</h3>
-            <p>Learn • Grow • Build Your Future</p>
+            <p>Learn • Grow • Build Your Future</p>     
           </div>
         </div>
 
@@ -47,7 +47,7 @@ function Login() {
           and Fortune 500 mentorship agreements
         </p>
 
-        <div className="stat-card stat-1">
+        <div className="stat-card stat-1"> 
           <h2>14,200+</h2>
           <span className="stat-label">ACTIVE INTERNS</span>
           <span className="stat-trend green">
@@ -63,7 +63,7 @@ function Login() {
           </span>
         </div>
 
-        <div className="stat-card stat-3">
+        <div className="stat-card stat-3"> /* active intern card */
           <h2>14,200+</h2>
           <span className="stat-label">ACTIVE INTERNS</span>
           <span className="stat-trend green">
@@ -71,13 +71,13 @@ function Login() {
           </span>
         </div>
 
-        <img className="hero-img" src={loginBg} alt="Internship portal" />
+        <img className="hero-img" src={loginBg} alt="Internship portal" /> /* illustration img */
 
         <div className="quote-card">
           <div className="quote-icon">
-            <img src={shieldWhite} alt="" />
+            <img src={shieldWhite} alt="" /> /*change*/
           </div>
-          <div className="quote-text">
+          <div className="quote-text"> 
             <p>
               “Automated audit trails cut academic credit clearance time from 14
               days to under 48 hours.”
