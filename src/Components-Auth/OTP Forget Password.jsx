@@ -59,59 +59,59 @@ export function OtpForgetPassword() {
   };
 
   return (
-    <div className="otp-page">
-      <div className="otp-panel">
-        <div className="otp-brand">
-          <img className="otp-logo" src={graduationcap} alt="Internship Management System" />
-          <div className="otp-brandtext">
-            <h3 className="otp-brandname">Internship Management System</h3>
-            <p className="otp-tagline">Learn • Grow • Build Your Future</p>
+    <div className="ims-otp-page">
+      <div className="ims-otp-panel">
+        <div className="ims-otp-brand">
+          <img className="ims-otp-logo" src={graduationcap} alt="Internship Management System" />
+          <div className="ims-otp-brandtext">
+            <h3 className="ims-otp-brandname">Internship Management System</h3>
+            <p className="ims-otp-tagline">Learn • Grow • Build Your Future</p>
           </div>
         </div>
 
-        <h1 className="otp-title">
+        <h1 className="ims-otp-title">
           Verify Identity &amp; Enter
           <br />
           Security Code
         </h1>
-        <p className="otp-desc">
+        <p className="ims-otp-desc">
           A 6-digit one-time password has been transmitted to your registered
           <br />
           institutional credentials.
         </p>
 
-        <img className="otp-art" src={illustration} alt="Identity verification" />
+        <img className="ims-otp-art" src={illustration} alt="Identity verification" />
 
-        <div className="otp-note">
-          <img className="otp-noteicon" src={shield} alt="" />
-          <div className="otp-notetext">
-            <p className="otp-notebody">
+        <div className="ims-otp-note">
+          <img className="ims-otp-noteicon" src={shield} alt="" />
+          <div className="ims-otp-notetext">
+            <p className="ims-otp-notebody">
               “Credential change verified across university registrars, Dean approvals, and enterprise partner portals.”
             </p>
-            <p className="otp-notemeta">
-              <span className="otp-protocol">Enterprise IAM &amp; Security Operations</span>
-              <span className="otp-verified"> — Zero Trust Protocol Active</span>
+            <p className="ims-otp-notemeta">
+              <span className="ims-otp-protocol">Enterprise IAM &amp; Security Operations</span>
+              <span className="ims-otp-verified"> — Zero Trust Protocol Active</span>
             </p>
           </div>
         </div>
       </div>
 
-      <form className="otp-form" onSubmit={handleVerify}>
-        <h2 className="otp-heading">Enter Verification Code</h2>
-        <p className="otp-subhead">
+      <form className="ims-otp-form" onSubmit={handleVerify}>
+        <h2 className="ims-otp-heading">Enter Verification Code</h2>
+        <p className="ims-otp-subhead">
           We’ve sent a 6-digit code to your registered Email and phone number. The code
           <br />
-          will expire in <span className="otp-expire">09:59</span> minutes.
+          will expire in <span className="ims-otp-expire">09:59</span> minutes.
         </p>
 
-        <div className="otp-codes">
+        <div className="ims-otp-codes">
           {digits.map((digit, index) => (
             <input
               key={index}
               ref={(node) => {
                 inputs.current[index] = node;
               }}
-              className="otp-digit"
+              className="ims-otp-digit"
               inputMode="numeric"
               autoComplete="one-time-code"
               maxLength={1}
@@ -124,28 +124,28 @@ export function OtpForgetPassword() {
           ))}
         </div>
 
-        <button type="submit" className="otp-verify">
+        <button type="submit" className="ims-otp-verify">
           Verify and Continue
           <img src={rightarrow} alt="" />
         </button>
 
-        <p className="otp-resend">
-          <span className="otp-prompt">Didn’t receive the code?</span>
-          <button type="button" className="otp-link" onClick={() => setSeconds(55)}>
+        <p className="ims-otp-resend">
+          <span className="ims-otp-prompt">Didn’t receive the code?</span>
+          <button type="button" className="ims-otp-link" onClick={() => setSeconds(55)}>
             Resend
           </button>
-          <span className="otp-timer">(in {clock})</span>
+          <span className="ims-otp-timer">(in {clock})</span>
         </p>
 
-        <div className="otp-divider" />
+        <div className="ims-otp-divider" />
 
-        <div className="otp-badges">
-          <span className="otp-badge">
-            <img className="otp-badgeicon" src={lock} alt="" />
+        <div className="ims-otp-badges">
+          <span className="ims-otp-badge">
+            <img className="ims-otp-badgeicon" src={lock} alt="" />
             End-to-end encrypted
           </span>
-          <span className="otp-badge">
-            <img className="otp-badgeicon" src={handshake} alt="" />
+          <span className="ims-otp-badge">
+            <img className="ims-otp-badgeicon" src={handshake} alt="" />
             Secure handshake
           </span>
         </div>
