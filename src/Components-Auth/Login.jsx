@@ -1,9 +1,10 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
 import graduationCap from '../assets/Auth/Graduation Cap.png';
 import loginBg from '../assets/Auth/Login-BG Img.png';
-import deansApprovedShield from '../assets/Auth/Approved sheild blue.png';
+import shieldBlue from '../assets/Auth/Approved sheild blue.png';
 import quoteTextshield from '../assets/Auth/Approved sheild white.png';
 import uptrendArrow from '../assets/Auth/Uptrend Arrow.png';
 import mailIcon from '../assets/Auth/mail.png';
@@ -12,11 +13,13 @@ import eyeOpen from '../assets/Auth/Eye open.png';
 import rightArrow from '../assets/Auth/Right Arrow.png';
 import googleIcon from '../assets/Auth/Googleicon.png';
 
-function Login() {
+export function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [keepSignedIn, setKeepSignedIn] = useState(false);
+
+  const navigate = useNavigate();
 
   const handleSignIn = (e) => {
     e.preventDefault();
@@ -24,9 +27,9 @@ function Login() {
   };
 
   return (
-    <div className="login-page">
-      {/* ---------- LEFT SIDE ---------- */}
-      <div className="login-left">
+    <div className="ims-login-page">
+      
+      <div className="ims-login-left">
         <div className="ims-title">
           <div className="ims-title-logo">
             <img src={graduationCap} alt="logo" />
@@ -37,12 +40,12 @@ function Login() {
           </div>
         </div>
 
-        <h1 className="illustration-title">
+        <h1 className="login-illustration-title"> 
           Connecting academic talent with
           <br />
-          career-defining corporate internships
+          career-defining corporate internship
         </h1>
-        <p className="illustration-desc">
+        <p className="login-illustration-desc">
           The verified enterprise portal synchronizing university dean approvals, experiential learning hours,
           <br />
           and Fortune 500 mentorship agreements
@@ -60,7 +63,7 @@ function Login() {
           <h2>98.4%</h2>
           <span className="active-intern-label">CREDIT VERIFIED</span>
           <span className="active-intern-trend blue">
-            <img src={deansApprovedShield} alt="" /> Deans Approved
+            <img src={shieldBlue} alt="" /> Deans Approved
           </span>
         </div>
 
@@ -72,7 +75,7 @@ function Login() {
           </span>
         </div>
 
-        <img className="illustration-img" src={loginBg} alt="Internship portal" />
+        <img className="login-illustration-img" src={loginBg} alt="Internship portal" />
 
         <div className="quote-card">
           <div className="quote-text-sheild-img">
@@ -92,12 +95,12 @@ function Login() {
 
       {/* ---------- RIGHT SIDE ---------- */}
       <form className="login-right" onSubmit={handleSignIn}>
-        <h2 className="welcome-text">Welcome Back</h2>
-        <p className="welcome-text-sub">Manage your career journey</p>
+        <h2 className="login-welcome-text">Welcome Back</h2>
+        <p className="login-welcome-text-sub">Manage your career journey</p>
 
-        <label className="field-label email-label">Email Address</label>
-        <div className="input-box">
-          <img className="input-icon" src={mailIcon} alt="" />
+        <label className="ims-login-field-label email-label">Email Address</label>
+        <div className="ims-login-input-box">
+          <img className="ims-input-icon" src={mailIcon} alt="" />
           <input
             type="email"
             placeholder="Enter Email address"
@@ -106,12 +109,14 @@ function Login() {
           />
         </div>
 
-        <div className="password-row">
-          <label className="field-label">Password</label>
-          <a href="#" className="forgot">Forgot Password?</a>
+        <div className="login-password-row">
+          <label className="login-field-label">Password</label>
+          <button type="button" className="ims-login-forgot" onClick={() => navigate('/forgot-password')}>
+  Forgot Password?
+</button>
         </div>
-        <div className="input-box">
-          <img className="input-icon" src={lockIcon} alt="" />
+        <div className="ims-login-input-box">
+          <img className="ims-input-icon" src={lockIcon} alt="" />
           <input
             type={showPassword ? 'text' : 'password'}
             placeholder="Enter your password"
@@ -119,14 +124,14 @@ function Login() {
             onChange={(e) => setPassword(e.target.value)}
           />
           <img
-            className="eye-icon"
+            className="ims-eye-icon"
             src={eyeOpen}
             alt="show password"
             onClick={() => setShowPassword(!showPassword)}
           />
         </div>
 
-        <label className="keep-signed-checkbox">
+        <label className="ims-login-keep-signed-checkbox">
           <input
             type="checkbox"
             checked={keepSignedIn}
@@ -135,7 +140,7 @@ function Login() {
           <span>Keep me signed in</span>
         </label>
 
-        <button type="submit" className="signin-btn">
+        <button type="submit" className="ims-login-signin-btn">
           Sign In <img src={rightArrow} alt="" />
         </button>
 
@@ -143,12 +148,12 @@ function Login() {
           <span>OR CONTINUE WITH</span>
         </div>
 
-        <button type="button" className="google-btn">
+        <button type="button" className="ims-login-google-btn">
           <img src={googleIcon} alt="" />
           Google
         </button>
 
-        <p className="create-acc">
+        <p className="ims-login-create-acc">
           Don't have an account? <a href="#">Create Account</a>
         </p>
 
@@ -164,4 +169,4 @@ function Login() {
   );
 }
 
-export default Login;
+

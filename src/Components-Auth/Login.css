@@ -2,8 +2,8 @@ body {
   margin: 0;
 }
 
-/* Page size: 1920 x 1080 */
-.login-page {
+
+.ims-login-page {
   position: relative;
   width: 1920px;
   height: 1080px;
@@ -13,8 +13,7 @@ body {
   background: linear-gradient(90deg, #566b99 0%, #8a9aba 30%, #c3cadb 52%, #f2f3f8 68%, #fdfdfd 82%);
 }
 
-/* ================= LEFT ================= */
-.login-left {
+.ims-login-left {
   position: absolute;
   top: 0;
   left: 0;
@@ -63,7 +62,7 @@ body {
   color: #fff;
 }
 
-.illustration-title {
+.login-illustration-title {
   position: absolute;
   top: 131px;
   left: 111px;
@@ -76,7 +75,7 @@ body {
   color: #fff;
 }
 
-.illustration-desc {
+.login-illustration-desc {
   position: absolute;
   top: 242px;
   left: 111px;
@@ -88,7 +87,7 @@ body {
   color: #fff;
 }
 
-/* ----- stat cards ----- */
+
 .active-intern-card {
   position: absolute;
   top: 322px;
@@ -145,8 +144,8 @@ body {
 .active-intern-trend.green { color: #16a34a; }
 .active-intern-trend.blue { color: #1a5f8a; }
 
-/* ----- illustration ----- */
-.illustration-img {
+
+.login-illustration-img {
   position: absolute;
   top: 443px;
   left: 313px;
@@ -156,7 +155,6 @@ body {
   mix-blend-mode: darken;
 }
 
-/* ----- quote card ----- */
 .quote-card {
   position: absolute;
   top: 957px;
@@ -211,7 +209,6 @@ body {
   color: #4a6a9a;
 }
 
-/* ================= RIGHT ================= */
 .login-right {
   position: absolute;
   top: 166px;
@@ -219,7 +216,7 @@ body {
   width: 604px;
 }
 
-.welcome-text {
+.login-welcome-text {
   margin: 0;
   font-size: 32px;
   line-height: 40px;
@@ -227,7 +224,7 @@ body {
   color: #0f2557;
 }
 
-.welcome-text-sub {
+.login-welcome-text-sub {
   margin: 9px 0 0;
   font-size: 16px;
   line-height: 24px;
@@ -235,7 +232,8 @@ body {
   color: #2b2b3a;
 }
 
-.field-label {
+.ims-login-field-label,
+.login-field-label {
   font-size: 15px;
   line-height: 20px;
   font-weight: 500;
@@ -243,18 +241,25 @@ body {
   color: #1a1a2e;
 }
 
+.ims-login-forgot {
+border: none;
+background: transparent;
+padding: 0;
+cursor: pointer;
+}
+
 .email-label {
   display: block;
   margin-top: 47px;
 }
 
-.input-box {
+.ims-login-input-box {
   position: relative;
   height: 55px;
   margin-top: 9px;
 }
 
-.input-box input {
+.ims-login-input-box input {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
@@ -268,15 +273,15 @@ body {
   outline: none;
 }
 
-.input-box input::placeholder {
+.ims-login-input-box input::placeholder {
   color: #6b7280;
 }
 
-.input-box input:focus {
+.ims-login-input-box input:focus {
   border-color: #12275a;
 }
 
-.input-icon {
+.ims-input-icon {
   position: absolute;
   top: 17px;
   left: 13px;
@@ -284,7 +289,7 @@ body {
   height: 20px;
 }
 
-.eye-icon {
+.ims-eye-icon {
   position: absolute;
   top: 16px;
   right: 15px;
@@ -293,20 +298,20 @@ body {
   cursor: pointer;
 }
 
-.password-row {
+.login-password-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 24px;
 }
 
-.forgot {
+.ims-login-forgot {
   font-size: 13px;
   color: #1a2b50;
   text-decoration: none;
 }
 
-.keep-signed-checkbox {
+.ims-login-keep-signed-checkbox {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -317,13 +322,13 @@ body {
   cursor: pointer;
 }
 
-.keep-signed-checkbox input {
+.ims-login-keep-signed-checkbox input {
   width: 17px;
   height: 17px;
   margin: 0;
 }
 
-.signin-btn {
+.ims-login-signin-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -342,7 +347,7 @@ body {
   cursor: pointer;
 }
 
-.signin-btn img {
+.ims-login-signin-btn img {
   width: 16px;
   height: 16px;
 }
@@ -373,12 +378,12 @@ body {
   color: #444;
 }
 
-.google-btn img {
+.ims-login-google-btn img {
   width: 20px;
   height: 20px;
 }
 
-.google-btn {
+.ims-login-google-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -395,7 +400,7 @@ body {
   cursor: pointer;
 }
 
-.create-acc {
+.ims-login-create-acc {
   margin: 38px 0 0;
   text-align: center;
   font-size: 16px;
@@ -403,7 +408,7 @@ body {
   color: #222;
 }
 
-.create-acc a {
+.ims-login-create-acc a {
   color: #12275a;
   text-decoration: none;
 }
