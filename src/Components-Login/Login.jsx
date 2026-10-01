@@ -2,16 +2,16 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
-import graduationCap from '../assets/Auth/Graduation Cap.png';
-import loginBg from '../assets/Auth/Login-BG Img.png';
-import shieldBlue from '../assets/Auth/Approved sheild blue.png';
-import quoteTextshield from '../assets/Auth/Approved sheild white.png';
-import uptrendArrow from '../assets/Auth/Uptrend Arrow.png';
-import mailIcon from '../assets/Auth/mail.png';
-import lockIcon from '../assets/Auth/Lock.png';
-import eyeOpen from '../assets/Auth/Eye open.png';
-import rightArrow from '../assets/Auth/Right Arrow.png';
-import googleIcon from '../assets/Auth/Googleicon.png';
+import graduationCap from '../assets/Login/Graduation Cap.png';
+import loginBg from '../assets/Login/Login-BG Img.png';
+import shieldBlue from '../assets/Login/Approved sheild blue.png';
+import quoteTextshield from '../assets/Login/Approved sheild white.png';
+import uptrendArrow from '../assets/Login/Uptrend Arrow.png';
+import mailIcon from '../assets/Login/mail.png';
+import lockIcon from '../assets/Login/Lock.png';
+import eyeOpen from '../assets/Login/Eye open.png';
+import rightArrow from '../assets/Login/Right Arrow.png';
+import googleIcon from '../assets/Login/Googleicon.png';
 
 export function Login() {
   const [email, setEmail] = useState('');

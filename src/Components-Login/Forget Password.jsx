@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Forget Password.css';
-import graduationcap from '../assets/Auth/Forgotcap.png';
-import illustration from '../assets/Auth/Forgotart.png';
-import shield from '../assets/Auth/Shield.png';
-import lockreset from '../assets/Auth/Lockreset.png';
-import emailIcon from '../assets/Auth/Dropdown.png';
-import phone from '../assets/Auth/Phone.png';
-import rightarrow from '../assets/Auth/Sendarrow.png';
-import backarrow from '../assets/Auth/Backarrow.png';
+import graduationcap from '../assets/Login/Forgotcap.png';
+import illustration from '../assets/Login/Forgotart.png';
+import shield from '../assets/Login/Shield.png';
+import lockreset from '../assets/Login/Lockreset.png';
+import emailIcon from '../assets/Login/Dropdown.png';
+import phone from '../assets/Login/Phone.png';
+import rightarrow from '../assets/Login/Sendarrow.png';
+import backarrow from '../assets/Login/Backarrow.png';
 
 export function ForgetPassword() {
   const navigate = useNavigate();

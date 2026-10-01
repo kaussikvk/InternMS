@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { Login } from './Components-Auth/Login';
-import { ForgetPassword } from './Components-Auth/Forget Password';
-import { OtpForgetPassword } from './Components-Auth/OTP Forget Password';
+import { Login } from './Components-Login/Login';
+import { ForgetPassword } from './Components-Login/Forget Password';
+import { OtpForgetPassword } from './Components-Login/OTP Forget Password';
 
 const router = createBrowserRouter([
   {

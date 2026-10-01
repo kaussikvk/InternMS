@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './OTP Forget Password.css';
-import graduationcap from '../assets/Auth/Otpcap.png';
-import illustration from '../assets/Auth/Otpart.png';
-import shield from '../assets/Auth/Shield.png';
-import lock from '../assets/Auth/Encrypted.png';
-import handshake from '../assets/Auth/Handshake.png';
-import rightarrow from '../assets/Auth/Sendarrow.png';
+import graduationcap from '../assets/Login/Otpcap.png';
+import illustration from '../assets/Login/Otpart.png';
+import shield from '../assets/Login/Shield.png';
+import lock from '../assets/Login/Encrypted.png';
+import handshake from '../assets/Login/Handshake.png';
+import rightarrow from '../assets/Login/Sendarrow.png';
 const CODE_LENGTH = 6;
 
 export function OtpForgetPassword() {
