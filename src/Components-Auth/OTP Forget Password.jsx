@@ -153,5 +153,3 @@ export function OtpForgetPassword() {
     </div>
   );
 }
-
-export default OtpForgetPassword;

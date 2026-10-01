@@ -40,12 +40,12 @@ export function Login() {
           </div>
         </div>
 
-        <h1 className="login-illustration-title"> 
+        <h1 className="ims-login-illustration-title"> 
           Connecting academic talent with
           <br />
           career-defining corporate internship
         </h1>
-        <p className="login-illustration-desc">
+        <p className="ims-login-illustration-desc">
           The verified enterprise portal synchronizing university dean approvals, experiential learning hours,
           <br />
           and Fortune 500 mentorship agreements
@@ -93,7 +93,7 @@ export function Login() {
         </div>
       </div>
 
-      {/* ---------- RIGHT SIDE ---------- */}
+      
       <form className="login-right" onSubmit={handleSignIn}>
         <h2 className="login-welcome-text">Welcome Back</h2>
         <p className="login-welcome-text-sub">Manage your career journey</p>
