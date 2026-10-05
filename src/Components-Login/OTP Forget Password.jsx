@@ -55,7 +55,7 @@ export function OtpForgetPassword() {
 
   const handleVerify = (event) => {
     event.preventDefault();
-    navigate('/login');
+    navigate('/reset-password');
   };
 
   return (

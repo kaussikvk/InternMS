@@ -152,7 +152,6 @@ body {
   width: 588px;
   height: 484px;
   object-fit: contain;
-  mix-blend-mode: darken;
 }
 
 .quote-card {
@@ -212,7 +211,7 @@ body {
 .login-right {
   position: absolute;
   top: 166px;
-  left: 1310px;
+  left: 1350px;
   width: 604px;
 }
 
